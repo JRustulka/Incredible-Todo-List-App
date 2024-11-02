@@ -1,7 +1,7 @@
 import { View, Text, ScrollView, Pressable, StyleSheet } from 'react-native';
+import tasks from './App.jsx';
 
-
-const ToDoList = () => {
+function ToDoList({ tasks }) {
   return (
 <ScrollView>
     <Pressable>
