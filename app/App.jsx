@@ -34,11 +34,23 @@ function App() {
   return (
     <SafeAreaView>
       <ToDoList></ToDoList>
+<<<<<<< Updated upstream
       <ToDoForm></ToDoForm>
       <ToDoList tasks={tasks} />
+=======
+      <ToDoForm addTask={addTask}></ToDoForm>
+>>>>>>> Stashed changes
     </SafeAreaView>
   );
 }
+
+// const addTask = (task) => {
+//   //add here
+// };
+
+const addTask = (taskText) => {
+  setTasks([...tasks, taskText]);
+};
 
 const styles = StyleSheet.create({
   task: {
